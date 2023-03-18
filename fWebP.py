@@ -2,13 +2,6 @@
 # created by Jon Rodrigues
 # https://github.com/jonrodrigues42
 
-
-# To-do:
-## better way to found the path (just change de chdir?)
-## use tqdm to show a progress bar
-### translate to Portuguese?
-### check if the file existis before starting
-
 import glob, os, sys, time
 from PIL import Image
 from tqdm import tqdm
@@ -67,4 +60,3 @@ for path in tqdm(paths, desc="Converting files", unit="file", ncols=80):
 
 # Finishes the process
 print("\n\nProcess finished.\n")
-sys.exit()
